@@ -1,0 +1,70 @@
+# Change Log
+The following is the changelog and version history of ita-integration-hermes-camunda-rest-api-client
+ 
+The format is based on [Keep a Changelog](http://keepachangelog.com/)
+and this project adheres to [Semantic Versioning](http://semver.org/).
+ 
+## [1.3.0] - 2022-07-27
+
+Release-Luglio-2022 aka Release-Presit
+
+### Added
+ - feature-bbh-r5
+ - feature-new-fs-3
+ - feature-Netflix_Repackaging
+ - feature-siebel-offloading-jul22
+ - feature-bl289
+ - feature-dazn
+ - feature-maven-clean
+ - fix-javadoc
+ - feature-digital-signature-drop2
+ - feature-Alexander-3P-Prova-Sky-Parallelo
+ - feature-residential-migration-s1
+ - feature-bbh-r4.1-change-order
+ - feature-notify-update-workOrder-fix
+ - feature-bbh-r4-fix-updateMop
+ - feature-llama-63210-fix
+ - feature-badpayers-fix
+ - feature-credit-risk-fix
+ - feature-bf-llama-credit-risk
+ - features-new-fs-2.5-fix-2
+ - feature-bbh-egon
+ 
+### Changed
+ - Jenkins file for a quicker pipeline
+ 
+### Fixed
+ - QA Defects
+ 
+## [1.2.0] - 2022-06-29
+ 
+Release-QA-Phase-2
+
+### Added
+N/A
+ 
+### Changed
+ - Dependencies Versions
+ - Clients use openapi submodule
+
+### Fixed
+ - QA Defects 
+
+## [1.1.0] - 2022-05-25
+ 
+Release-QA-Phase-1
+
+### Added
+ - BBH-R4
+ - New-FS2.5 
+ 
+### Changed
+N/A
+
+### Fixed
+ - QA Defects
+ 
+## [1.0.0] - 2022-05-15
+ 
+Very first version, tested but not deployed
+

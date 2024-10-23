@@ -1,0 +1,62 @@
+openapi: 3.0.2
+info:
+  title: Bamoe Backend API
+  version: 1.0.0
+  description: Bamoe Backend Interface Agreements
+  contact:
+    name: Discovery Reply Cloud Platforms
+    email: discovery.cloud.platforms@reply.it
+  license:
+    name: Apache License Version 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+servers:
+  - description: DUMMY
+    url: http://dummy-url.com
+
+tags:
+  - name: "Bamoe Backend"
+    description: Set of APIs to manage Bamoe backend.
+
+paths:
+  /server/containers/{containerId}/processes/{processId}/instances:
+    post:
+      operationId: "startProcess"
+      tags:
+        - "Bamoe Backend"
+      summary: "Starts a new process instance of a specified process"
+      description: "Starts a new process instance within the given container."
+      parameters:
+        - in: path
+          name: containerId
+          required: true
+          description: "ID of the container where the process definition resides."
+          schema:
+            type: string
+            minLength: 1
+            maxLength: 10
+            pattern: '^[a-zA-Z0-9_\-]*$'
+        - in: path
+          name: processId
+          required: true
+          description: "ID of the process to be started."
+          schema:
+            type: string
+            minLength: 1
+            maxLength: 10
+            pattern: '^[a-zA-Z0-9_\-]*$'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+      responses:
+        "201":
+          description: "Process instance successfully started."
+        "500":
+          description: "Unexpected error occurred."
+        "404":
+          description: "Process ID or Container ID not found."
+        "403":
+          description: "User does not have permission to access this resource."
